@@ -12,6 +12,8 @@ $("document").ready(function(){
     $('h1').bind('click', mouseClick);
     $('#replaceWHtml').bind('click', replaceWHtml);
     $('#replaceWText').bind('click', replaceWText);
+    $('#addAPara').bind('click',addAPara);
+    $('#removeAPara').bind('click',removeAPara);
 });
  function mouseOverMe(){
    $("#second").html("you put your cursor on my logo");
@@ -27,4 +29,10 @@ $("document").ready(function(){
  }
  function replaceWText(){
      $('#h2tag').text('<h4>Now I/m on h4</h4>');
+ }
+  function addAPara(){
+     $('#randPara').append('<p>Another Paragraph</p>');
+ }
+ function removeAPara(){
+     $('#randPara p:last').remove();
  }
