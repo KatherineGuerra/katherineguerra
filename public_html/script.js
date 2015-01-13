@@ -5,6 +5,7 @@
  */
 
 
+
 $("document").ready(function(){
     $(".umm").css("background-color","cyan");
     $("p").css({"background-color": "magenta", "color": "white"});
@@ -14,6 +15,11 @@ $("document").ready(function(){
     $('#replaceWText').bind('click', replaceWText);
     $('#addAPara').bind('click',addAPara);
     $('#removeAPara').bind('click',removeAPara);
+    $('#hideLogo').bind('click',hideTheImage);
+    $('#showLogo').bind('click', showTheImage);
+    $('#fadeLogo').bind('click', fadeTheImage);
+    $('#fadeALittle').bind('click', fadeALittle);
+   
 });
  function mouseOverMe(){
    $("#second").html("you put your cursor on my logo");
@@ -36,3 +42,44 @@ $("document").ready(function(){
  function removeAPara(){
      $('#randPara p:last').remove();
  }
+ function hideTheImage(){
+     $('.logo').hide('explode', {}, 2500);
+ }
+ function showTheImage(){
+     $('.logo').show('fold', {}, 2500);
+ }
+ function fadeTheImage(){
+     $('.logo').fadeOut(2500);
+ }
+ function fadeALittle(){
+     $('.logo').fadeTo(2500, .30);
+ }
+ 
+ //function lastIsFirst(){
+     //$('#randPara p: last').append($('#randPara p:first'));
+ //}
+ //function addBefore(){
+     //$('#randPara p:first').before('I go before anything');
+ //}
+ //function addAfter(){
+     //$('#randPara p: last').after('I go after anything');
+ //}
+// function addToTextBox(){
+    // $('#randText').val('Random Text');
+ //}
+ //function deleteSpan(){
+    // $('span').remove(':contains("Append")');
+ //}
+ //$('#lastIsFirst').bind('click', lastIsFirst);
+ //   $('#addBefore').bind('click',addBefore);
+  //  $('#addAfter').bind('click',addAfter);
+   // $('#addToTextBox').bind('click',lastIsFirst);
+   // $('deleteSpan').bind('click',deleteSpan);
+    
+    //$('#randPara').before('<span>Before Paragraph</span>');
+   // $('<span> Insert Before Paragraph</span>').insertBefore('#randPara');
+   // $('<span> Prepend to Paragraph</span>').prependTo('#randPara');
+    //$('<span> Append To Paragraph</span>').appendTo('#randPara');
+    //$('#randPara').append('<span>Append Paragraph</span>');
+   // $('<span> Insert After Paragraph</span>').insertAfter('#randPara');
+  //  $('#randPara').after('<span> After Paragraph</span>');
