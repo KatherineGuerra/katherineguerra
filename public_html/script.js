@@ -19,7 +19,9 @@ $("document").ready(function(){
     $('#showLogo').bind('click', showTheImage);
     $('#fadeLogo').bind('click', fadeTheImage);
     $('#fadeALittle').bind('click', fadeALittle);
-   
+    setInterval("slidePix()", 2000);
+    $()
+    
 });
  function mouseOverMe(){
    $("#second").html("you put your cursor on my logo");
@@ -54,6 +56,18 @@ $("document").ready(function(){
  function fadeALittle(){
      $('.logo').fadeTo(2500, .30);
  }
+ function slidePix(){
+   var curPic = $('#flipPix div.active');
+   var nextPic = curPic.next();
+   if(nextPic.length == 0){
+       nextPic = $('#flipPix div:first');
+   }
+    curPic.removeClass('active').addClass('prev');
+    nextPic.css({opacity: 0.0}).addClass('active').animate({opacity: 1.0}, 2000, 
+    function() {
+        curPic.removeClass('prev');
+    });
+ }
  
  //function lastIsFirst(){
      //$('#randPara p: last').append($('#randPara p:first'));
@@ -83,3 +97,13 @@ $("document").ready(function(){
     //$('#randPara').append('<span>Append Paragraph</span>');
    // $('<span> Insert After Paragraph</span>').insertAfter('#randPara');
   //  $('#randPara').after('<span> After Paragraph</span>');
+  //  
+ // $("a[rel=example_group]").fancybox({
+      //  'transitionIn' : 'elastic',
+     //   'transitionOut' : 'elastic',
+     //   'titlePosition' : 'over',
+    //    'titleFormat' : function(title, currentArray, currentIndex, currentOpts)
+    ////    { return '<span id="fancy-box-title-over">Image' + (surrentIndex + 1) + '/' + currantArray.length +
+        //(title.length ? '$nbsp;' +title : '') + '</span>';}
+        //});
+   

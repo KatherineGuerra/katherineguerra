@@ -12,6 +12,10 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="fancybox/fancybox/jquery.easing-1.4.pack.js"></script>
+        <script type="text/javascript" src="fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+        <script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
     </head>
     <body>
         <div class="umm">         
@@ -24,28 +28,53 @@ and open the template in the editor.
             <button id="showLogo">Show Logo</button>
             <button id="fadeLogo">Fade Logo</button>
             <button id="fadeALittle">Fade A Little</button>
-               <img src="http://brand.jquery.org/resources/jquery-dev-summit-mark.gif" class="logo" >
+               <img src="http://rlv.zcache.com/big_eyes_smiley_face_round_stickers-r1cbcb186c10d453a9c3326644d3f9b3e_v9waf_8byvr_512.jpg?bg=0xffffff" class="logo" >
             <p id="second" >you stopped touching my logo</p>
         </div>
         <div><h2>playing with text</h2></div>
         <div><h2 id="h2tag"> h2 tag</h2></div>
         <div><h3 id="randPara"></h3></div>
+        <div id="tabs">
+        <ul>   
+            <li><a href="#fragment-1"><span></span></a></li>
+            <li><a href="#fragment-2"><span></span></a></li>
+            <li><a href="#fragment-3"><span></span></a></li>
+        </ul>  
+        <div id="fragment-1"></div>
+        <div id="fragment-2"></div>
+        <div id="fragment-3"></div>
+        </div>
+        
         <form action=''>
             <button type="button" id="deleteSpan">Delete Span</button>
         </form>
         <div id="flipPix">
             <div class="active">
-                <img src="">
+                <img src="https://s-media-cache-ak0.pinimg.com/736x/fd/91/03/fd9103b66285baeb72b758e7639437d9.jpg">
             </div>
             <div>
-                <img src="">
+                <img src="https://s-media-cache-ak0.pinimg.com/236x/a4/2b/b4/a42bb4b30f1fbd8d3afb4409571f6f37.jpg">
             </div>
             <div>
-                <img src="">
+                <img src="http://redpointinglabradors.com/wp-content/uploads/4.jpg">
             </div>
         </div>
         <style>
-            
+            #flipPix{
+                position: relative;
+                height: 150px;
+                width: 150px;
+            }
+            #flipPix div{
+                position:absolute;
+                z-index: 0;
+            }
+            #flipPix div.prev{
+                z-index: 1;
+            }
+            #flipPix div.active{
+                z-index:2;
+            }
         </style>
          
         <script type="text/javascript" src="script.js"></script>
@@ -55,3 +84,6 @@ and open the template in the editor.
             <button id="addBefore">Add Before</button>
             <button id="addAfter">Add After</button>
             <button id="addToTextBox">Add To Text Box</button>>
+  <span><a rel="example_group" href=""><img src="" title=""></a></span>
+        <span><a rel="example_group" href=""><img src="" title=""></a></span>
+        <span><a rel="example_group" href=""><img src="" title=""></a></span>
