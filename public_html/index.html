@@ -16,6 +16,7 @@ and open the template in the editor.
         <script type="text/javascript" src="fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
         <script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
         <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        <link type="text/css" href="css/cupertino/jquery-ui-1.8.10.custom.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="umm">         
@@ -34,8 +35,28 @@ and open the template in the editor.
         <div><h2>playing with text</h2></div>
         <div><h2 id="h2tag"> h2 tag</h2></div>
         <div><h3 id="randPara"></h3></div>
-        <div id="tabs">
-        <ul>   
+       
+        
+        <form action=''>
+            <button type="button" id="deleteSpan">Delete Span</button>
+        </form>
+        <div id="accordion">
+            <h4>first</h4>
+            <p>-____-</p>
+            <h4>second</h4>
+            <p>-____-</p>
+            <h4>third</h4>
+            <p>-____-</p>
+        </div>
+        <style>
+            div{
+                width: 300px;
+                overflow: hidden
+            }
+        </style>
+   
+          <div id="tabs">
+        <ul id="sortMe">   
             <li><a href="#fragment-1"><span></span></a></li>
             <li><a href="#fragment-2"><span></span></a></li>
             <li><a href="#fragment-3"><span></span></a></li>
@@ -45,10 +66,18 @@ and open the template in the editor.
         <div id="fragment-3"></div>
         </div>
         
-        <form action=''>
-            <button type="button" id="deleteSpan">Delete Span</button>
-        </form>
-        <div id="flipPix">
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+ <!-- <button id="lastIsFirst">Last to First</button>
+            <button id="addBefore">Add Before</button>
+            <button id="addAfter">Add After</button>
+            <button id="addToTextBox">Add To Text Box</button>>
+  <span><a rel="example_group" href=""><img src="" title=""></a></span>
+        <span><a rel="example_group" href=""><img src="" title=""></a></span>
+        <span><a rel="example_group" href=""><img src="" title=""></a></span>
+ 
+      <div id="flipPix">
             <div class="active">
                 <img src="https://s-media-cache-ak0.pinimg.com/736x/fd/91/03/fd9103b66285baeb72b758e7639437d9.jpg">
             </div>
@@ -76,14 +105,3 @@ and open the template in the editor.
                 z-index:2;
             }
         </style>
-         
-        <script type="text/javascript" src="script.js"></script>
-    </body>
-</html>
- <!-- <button id="lastIsFirst">Last to First</button>
-            <button id="addBefore">Add Before</button>
-            <button id="addAfter">Add After</button>
-            <button id="addToTextBox">Add To Text Box</button>>
-  <span><a rel="example_group" href=""><img src="" title=""></a></span>
-        <span><a rel="example_group" href=""><img src="" title=""></a></span>
-        <span><a rel="example_group" href=""><img src="" title=""></a></span>
