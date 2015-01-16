@@ -19,10 +19,10 @@ $("document").ready(function(){
     $('#showLogo').bind('click', showTheImage);
     $('#fadeLogo').bind('click', fadeTheImage);
     $('#fadeALittle').bind('click', fadeALittle);
-   
-    $('#tabs').tabs();
-    $('#tabs').draggable();
-    $('#tabs').resizeable();
+
+//    $('#tabs').tabs();
+//    $('#tabs').draggable();
+//    $('#tabs').resizeable();
     $('#sortMe').sortable();
 
     $('#accordion').accordion({header: "h4"});
