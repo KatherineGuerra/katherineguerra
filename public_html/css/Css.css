@@ -40,3 +40,15 @@
 .back {
 	transform: rotateY(180deg);
 }
+
+#animateList li a {
+    cursor: pointer;
+    transition: padding-left 250ms ease-out;
+    /* trans pattern:  property duration timingMethod delay */
+}
+#animateList li a:hover {
+    padding-left: 20px;
+}
+body {
+	cursor: url('2015_01_20_10_34_59_Greenshot_capture_form.png'), default;
+}

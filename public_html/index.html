@@ -22,6 +22,7 @@ and open the template in the editor.
     <body>
         <div class="umm">         
             <h1>h1</h1>
+            <!--these code creates buttons-->
             <button id="replaceWHtml">replaceWHtml</button>
             <button id="replaceWText">replaceWText</button>
             <button id="addAPara">add Text</button>
@@ -30,6 +31,7 @@ and open the template in the editor.
             <button id="showLogo">Show Logo</button>
             <button id="fadeLogo">Fade Logo</button>
             <button id="fadeALittle">Fade A Little</button>
+            <!--this code is going to be my logo -->
             <img src="http://rlv.zcache.com/big_eyes_smiley_face_round_stickers-r1cbcb186c10d453a9c3326644d3f9b3e_v9waf_8byvr_512.jpg?bg=0xffffff" class="logo" >
             <p id="second" >you stopped touching my logo</p>
         </div>
@@ -49,28 +51,31 @@ and open the template in the editor.
             <h4>third</h4>
             <p>-____-</p>
         </div>
+        <!--this line of code flips the image that i have front and back-->
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front">
-
+                    <img src='http://i1.cpcache.com/product_zoom/44984073/letter_k_cursive_initial_mug.jpg?height=250&width=250&padToSquare=true'>
                 </div>
                 <div class="back">
-
+                    <img src='http://i1.cpcache.com/product_zoom/44991382/letter_g_cursive_initial_mug.jpg?height=250&width=250&padToSquare=true'>
                 </div>
             </div>
         </div>
-        <!--<style>
-            div{
-                width: 300px;
-                overflow: hidden
-            }
-        </style>-->
-
+        <!--this line of code will nudge out-->
+        <div id='animateList li a'>
+            <ul>
+                <li><a href='link'>link<span></span></a></li>
+            </ul>
+            <div id='link'></div>
+        </div>
+      
+<!--id= "sort me" will sort my tabs however i want them to be sorted-->
         <div id="tabs">
             <ul id="sortMe">   
-                <li><a href="#fragment-1"><span></span></a></li>
-                <li><a href="#fragment-2"><span></span></a></li>
-                <li><a href="#fragment-3"><span></span></a></li>
+                <li><a href="#fragment-1">fragment1<span></span></a></li>
+                <li><a href="#fragment-2">fragment2<span></span></a></li>
+                <li><a href="#fragment-3">fragment3<span></span></a></li>
             </ul>  
             <div id="fragment-1"></div>
             <div id="fragment-2"></div>

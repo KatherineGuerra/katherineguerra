@@ -19,6 +19,7 @@ $("document").ready(function(){
     $('#showLogo').bind('click', showTheImage);
     $('#fadeLogo').bind('click', fadeTheImage);
     $('#fadeALittle').bind('click', fadeALittle);
+   
 
 //    $('#tabs').tabs();
 //    $('#tabs').draggable();
@@ -27,15 +28,11 @@ $("document").ready(function(){
 
     $('#accordion').accordion({header: "h4"});
 });
-   // $('#accordion > p').hide();
-  //  $('#accordion h4').click(function(){
-    //    $(this).siblings('p:visible').slideUp('2000');
-      //  $(this).next().animate({'height': 'toggle'}, '2000', 'easeInOutExpo');
-    //});
-// setInterval("slidePix()", 2000);
+ //hover on the logo it will say that you put your cursor on my logo
  function mouseOverMe(){
    $("#second").html("you put your cursor on my logo");
  }
+ //if you stop hovering on the logo it will say you stopped touching my logo
  function mouseOutMe(){
    $("#second").html("you stopped touching my logo");  
  }
@@ -45,24 +42,31 @@ $("document").ready(function(){
  function replaceWHtml(){
      $('#h2tag').html('<h4>Now I/m on h4</h4>');
  }
+ //replaces the html code
  function replaceWText(){
      $('#h2tag').text('<h4>Now I/m on h4</h4>');
  }
+//this will add extra code
   function addAPara(){
      $('#randPara').append('<p>Another Paragraph</p>');
  }
+ //this will remove the code that been added
  function removeAPara(){
      $('#randPara p:last').remove();
  }
+ //hides my logo on my page
  function hideTheImage(){
      $('.logo').hide('explode', {}, 2500);
  }
+ //after hiding the logo i can show it back again
  function showTheImage(){
      $('.logo').show('fold', {}, 2500);
  }
+ //fades my logo
  function fadeTheImage(){
      $('.logo').fadeOut(2500);
  }
+ //fades my logo a liitle
  function fadeALittle(){
      $('.logo').fadeTo(2500, .30);
  }
