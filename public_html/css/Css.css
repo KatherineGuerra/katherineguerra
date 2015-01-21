@@ -1,44 +1,44 @@
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000;
+    perspective: 1000;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+    width: 320px;
+    height: 480px;
 }
 
 /* flip speed goes here */
 .flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
 
-	position: relative;
+    position: relative;
 }
 
 /* hide back of pane during swap */
 .front, .back {
-	backface-visibility: hidden;
+    backface-visibility: hidden;
 
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* front pane, placed above back */
 .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 #animateList li a {
@@ -50,5 +50,5 @@
     padding-left: 20px;
 }
 body {
-	cursor: url('2015_01_20_10_34_59_Greenshot_capture_form.png'), default;
+    cursor: url('../2015_01_20_10_34_59_Greenshot_capture_form_1.png'), default;
 }

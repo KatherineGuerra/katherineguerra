@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -40,9 +35,6 @@ and open the template in the editor.
         <div><h3 id="randPara"></h3></div>
 
 
-        <form action=''>
-            <button type="button" id="deleteSpan">Delete Span</button>
-        </form>
         <div id="accordion">
             <h4>first</h4>
             <p>-____-</p>
@@ -51,6 +43,7 @@ and open the template in the editor.
             <h4>third</h4>
             <p>-____-</p>
         </div>
+        <span>
         <!--this line of code flips the image that i have front and back-->
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
@@ -63,14 +56,14 @@ and open the template in the editor.
             </div>
         </div>
         <!--this line of code will nudge out-->
-        <div id='animateList li a'>
+       <!-- <div id='animateList li a'>
             <ul>
                 <li><a href='link'>link<span></span></a></li>
             </ul>
             <div id='link'></div>
-        </div>
-      
-<!--id= "sort me" will sort my tabs however i want them to be sorted-->
+        </div>-->
+
+        <!--id= "sort me" will sort my tabs however i want them to be sorted-->
         <div id="tabs">
             <ul id="sortMe">   
                 <li><a href="#fragment-1">fragment1<span></span></a></li>
@@ -85,39 +78,3 @@ and open the template in the editor.
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
-<!-- <button id="lastIsFirst">Last to First</button>
-           <button id="addBefore">Add Before</button>
-           <button id="addAfter">Add After</button>
-           <button id="addToTextBox">Add To Text Box</button>>
- <span><a rel="example_group" href=""><img src="" title=""></a></span>
-       <span><a rel="example_group" href=""><img src="" title=""></a></span>
-       <span><a rel="example_group" href=""><img src="" title=""></a></span>
-
-     <div id="flipPix">
-           <div class="active">
-               <img src="https://s-media-cache-ak0.pinimg.com/736x/fd/91/03/fd9103b66285baeb72b758e7639437d9.jpg">
-           </div>
-           <div>
-               <img src="https://s-media-cache-ak0.pinimg.com/236x/a4/2b/b4/a42bb4b30f1fbd8d3afb4409571f6f37.jpg">
-           </div>
-           <div>
-               <img src="http://redpointinglabradors.com/wp-content/uploads/4.jpg">
-           </div>
-       </div>
-       <style>
-           #flipPix{
-               position: relative;
-               height: 150px;
-               width: 150px;
-           }
-           #flipPix div{
-               position:absolute;
-               z-index: 0;
-           }
-           #flipPix div.prev{
-               z-index: 1;
-           }
-           #flipPix div.active{
-               z-index:2;
-           }
-       </style>
