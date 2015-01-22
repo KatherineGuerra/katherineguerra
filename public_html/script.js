@@ -19,18 +19,7 @@ $("document").ready(function() {
     $('#showLogo').bind('click', showTheImage);
     $('#fadeLogo').bind('click', fadeTheImage);
     $('#fadeALittle').bind('click', fadeALittle);
-   // $('a[rel=example_group]').fancybox({
-        //'transitionIn' : 'elastic',
-        //'transitionOut' : 'fade',
-       // 'titlePosition' : 'over',
-       // 'titleFormat' : function(title, currentArray, currentIndex,
-      //  currentOpts)
-      //  {
-         //    return '<span id="fancy-box-title-over">Image  ' + (currentIndex
-          //   + 1) + '/' +currentArray.length + (title.length ? '&nbsp;'
-          //   + title :'' ) + '</span>' ;
-       // }
-        //});
+
 
     $('#sortMe').sortable();
 
